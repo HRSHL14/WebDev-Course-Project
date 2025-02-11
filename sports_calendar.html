@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Calendar</title>
+    <link href="sports_calendarCSS.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="sports_maharashtra.png" width="70px"></a>
+        <h1>SPORTS CALENDAR</h1>
+    </header>
+
+    <div class="scrolling">View upcoming sports events and schedules.</div>
+
+    <div class="container mt-4 d-flex justify-content-center">
+
+        <div id="sportsCarousel" class="carousel slide mx-auto mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="cricket.png" class="d-block w-100" alt="Cricket">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="football.jpg" class="d-block w-100" alt="Football">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="basketball.png" class="d-block w-100" alt="Basketball">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="tennis.jpg" class="d-block w-100" alt="Tennis">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="hockey.png" class="d-block w-100" alt="Hockey">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sportsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sportsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#sportsCarousel" data-bs-slide-to="4"></button>
+            </div>            
+        </div>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Sport</th>
+                    <th>Venue</th>
+                </tr>
+                <tr>
+                    <td>March 10, 2025</td>
+                    <td>Cricket</td>
+                    <td>Kolkata</td>
+                </tr>
+                <tr>
+                    <td>April 5, 2025</td>
+                    <td>Football</td>
+                    <td>Mumbai</td>
+                </tr>
+                <tr>
+                    <td>May 20, 2025</td>
+                    <td>Basketball</td>
+                    <td>Bangalore</td>
+                </tr>
+                <tr>
+                    <td>June 15, 2025</td>
+                    <td>Tennis</td>
+                    <td>Chennai</td>
+                </tr>
+                <tr>
+                    <td>July 8, 2025</td>
+                    <td>Hockey</td>
+                    <td>New Delhi</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="event-info-container mt-6">
+        <h2>Upcoming Sports Events – Detailed Information</h2>
+    
+        <div class="event-info">
+            <h3>Cricket Championship – March 10, 2025</h3>
+            <p><strong>Venue:</strong> Eden Gardens, Maidan, B.B.D. Bagh, Kolkata, West Bengal, 700021</p>
+            <p><strong>Match Timings:</strong> 2:00 PM – 10:00 PM IST</p>
+            <p><strong>Event Details:</strong> The annual Cricket Championship brings together top international teams for a thrilling showdown. Experience the electrifying atmosphere as the best players compete for the championship title.</p>
+        </div>
+    
+        <div class="event-info">
+            <h3>Football League Final – April 5, 2025</h3>
+            <p><strong>Venue:</strong> Mumbai Football Arena, Andheri Sports Complex, Andheri West, Mumbai, Maharashtra, 400053</p>
+            <p><strong>Match Timings:</strong> 6:30 PM – 9:00 PM IST</p>
+            <p><strong>Event Details:</strong> Witness the grand finale of the Football League, featuring the best clubs battling for glory. Expect high-intensity gameplay, strategic moves, and passionate fans cheering from the stands.</p>
+        </div>
+    
+        <div class="event-info">
+            <h3>National Basketball Championship – May 20, 2025</h3>
+            <p><strong>Venue:</strong> Sree Kanteerava Indoor Stadium, Kasturba Road, Bangalore, Karnataka, 560001</p>
+            <p><strong>Match Timings:</strong> 4:00 PM – 8:00 PM IST</p>
+            <p><strong>Event Details:</strong> The top basketball teams in the country will go head-to-head in an action-packed tournament. From slam dunks to three-pointers, get ready for a night of high-speed basketball action.</p>
+        </div>
+    
+        <div class="event-info">
+            <h3>International Tennis Open – June 15, 2025</h3>
+            <p><strong>Venue:</strong> SDAT Tennis Stadium, Lake Area, Nungambakkam, Chennai, Tamil Nadu, 600034</p>
+            <p><strong>Match Timings:</strong> 3:00 PM – 7:30 PM IST</p>
+            <p><strong>Event Details:</strong> The world's best tennis players will gather in Chennai to compete in the prestigious International Tennis Open. Witness skill, strategy, and endurance at its finest.</p>
+        </div>
+    
+        <div class="event-info">
+            <h3>National Hockey Tournament – July 8, 2025</h3>
+            <p><strong>Venue:</strong> Major Dhyan Chand National Stadium, India Gate, New Delhi, 110001</p>
+            <p><strong>Match Timings:</strong> 5:00 PM – 9:00 PM IST</p>
+            <p><strong>Event Details:</strong> The best national teams compete in this legendary hockey tournament. Experience the energy, speed, and excitement of field hockey at its peak.</p>
+        </div>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

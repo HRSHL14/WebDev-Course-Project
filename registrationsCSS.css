@@ -1,0 +1,175 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    color: aliceblue;
+    border-bottom: 3px solid black;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(45, 44, 44));
+    border-bottom: 3px solid white;
+    border-radius: 0.5rem;
+    /*background: linear-gradient(to top, rgb(37, 138, 233), rgb(89, 165, 246), rgb(135, 224, 236));*/
+    /*background: radial-gradient(circle, rgb(121, 136, 226), rgb(152, 93, 224), rgb(89, 22, 184));*/
+}
+
+h1 {
+    margin: auto;
+    font-family: 'Times-New-Roman';
+    font-size: 2rem;
+    font-weight: bold;
+}
+img {
+    float: left;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('registrationsBG.jpg');
+    /*background: linear-gradient(to top, rgb(0, 0, 0), rgb(45, 44, 44), rgb(72, 72, 72));*/
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.scrolling {
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 50vw;
+    font-size: 1.2rem;
+    font-weight: 300;
+    animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+    from { transform: translateX(100vw); }
+    to { transform: translateX(-20vw); }
+}
+
+.Table {
+    display: block;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+table {
+    text-align: center;
+    border-spacing: 0;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+}
+
+th {
+    padding: 1rem;
+    border: 2px solid rgba(182, 185, 252, 0.1);
+    color: aliceblue;
+    background: linear-gradient(to top, rgb(22, 80, 167), rgb(45, 150, 242), rgb(108, 142, 255));
+}
+
+td {
+    padding: 0.5rem;
+    border: 2px solid rgba(66, 66, 66, 0.1);
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(45, 44, 44));
+}
+
+tr:hover td {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+th:first-child {
+    border-top-left-radius: 0.5rem;
+}
+th:last-child {
+    border-top-right-radius: 0.5rem;
+}
+tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5rem;
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5rem;
+}
+
+.container {
+    max-width: 400px;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(45, 44, 44));
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+h2 {
+    font-family: 'Times-New-Roman';
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    background: linear-gradient(to top, rgb(22, 80, 167), rgb(45, 150, 242), rgb(108, 142, 255));
+    border-radius: 0.2rem;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form-control, .form-select {
+    background-color: #98d8fd;
+    color: white;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #72a8f9;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(114, 168, 249, 0.5);
+}
+
+.form-control::placeholder {
+    color: #bbb;
+}
+
+.btn-primary {
+    background: linear-gradient(to top, rgb(22, 80, 167), rgb(45, 150, 242));
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: rgb(15, 60, 140);
+    box-shadow: 0 0 10px rgba(45, 150, 242, 0.8);
+}
+
+.event-info-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.event-info-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.event-info {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}

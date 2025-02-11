@@ -1,0 +1,75 @@
+
+<!-- registrations.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrations</title>
+    <link href="registrationsCSS.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600&family=Oswald:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="sports_maharashtra.png" width="70px"></a>
+        <h1>REGISTRATIONS</h1>
+    </header>
+    <div class="scrolling">Register for upcoming sports events here...</div>
+    <div class="Table">
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Football Tournament</td>
+                <td>March 15, 2025</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Badminton Championship</td>
+                <td>April 5, 2025</td>
+                <td>Mumbai</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container mt-4">
+        <h2 class="text-center">Enter Details</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="sport" class="form-label">Sport:</label>
+                <select class="form-select" id="sport" required>
+                    <option value="" disabled selected>Select Sport</option>
+                    <option>Football Tournament</option>
+                    <option>Badminton Championship</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="name" class="form-label">Candidate Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="contact" class="form-label">Contact Number:</label>
+                <input type="tel" class="form-control" id="contact" placeholder="Enter Contact No" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="event-info-container mt-6">
+        <h2>Terms and Conditions</h2>
+    
+        <div class="event-info">
+            <h3>Directorate of Sports and Youth Services</h3>
+            <p><strong>Information: </strong>The Indian government’s sports registration terms and conditions outline the necessary requirements for individuals, teams, and organizations seeking official recognition. Applicants must provide accurate personal and organizational details, including identity proof, address proof, and relevant sports certifications. Registration is subject to verification by the concerned sports authority, and any false information may lead to disqualification. Compliance with national and international sports regulations, including anti-doping policies and ethical conduct, is mandatory. Registered entities must adhere to training, participation, and performance standards set by governing bodies. The government reserves the right to modify or revoke registration in case of violations, misconduct, or non-compliance with guidelines.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
